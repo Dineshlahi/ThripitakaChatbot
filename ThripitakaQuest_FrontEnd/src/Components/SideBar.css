@@ -1,0 +1,272 @@
+.sideBar{
+    flex:2;
+    border-right: 1px solid rgb(100, 100, 100);
+    background-color: rgb(101,50,23, 0.97);
+}
+
+.upperSide{
+    padding: 1rem 2rem 1rem 2rem;
+    /*border-bottom: 1px solid rgb(100, 100, 100);*/
+    height: 88%;
+}
+
+.upperSideTop{
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.logo{
+    margin-right: 1rem;
+    height: 10rem;
+    width: 11rem;
+}
+
+.brandName{
+    font-size: 2rem;
+}
+
+.midButton{
+    background: transparent;
+    border: 1px solid rgba(98, 98, 98, 1);
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    width: 25rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.midButton:hover{
+    border: 1px solid rgba(98, 98, 98, 1);
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.midButton:active{
+    background: rgb(255, 255, 255, 0.1)
+}
+
+.newChatBtnImg{
+    height: 1.5rem;
+    padding-right: 1rem;
+}
+
+/*.midButton.btn-primary:hover,
+.midButton.btn-primary:focus{
+    background: #5A4Bff ;
+}*/
+
+.upperSideBottom{
+    overflow-y: auto;
+    max-height: 47rem;
+    overflow-x: hidden;
+}
+
+/* Hide the scrollbar in WebKit (Chrome and Safari) */
+.upperSideBottom::-webkit-scrollbar {
+    width: 0.5rem; /* Adjust the width as needed */
+}
+
+/* Style the scrollbar thumb in WebKit (Chrome and Safari) */
+.upperSideBottom::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    height: 1rem;
+}
+
+.queryButton{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: rgba(222, 222, 222, 1);
+    font-size: 1.18rem;
+    padding: 1.5rem;
+    height: 3.5rem;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(98, 98, 98, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.queryButtonContainer{
+    position: relative;
+}
+
+.queryBtnImg{
+    margin-right: 1.4rem;
+    object-fit: cover;
+    height: 1.75rem;
+}
+
+.queryButton.btn-primary:hover,
+.queryButton.btn-primary:focus{
+    background: transparent ;
+}
+
+.deleteBtnImg{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: invert(100%);
+}
+
+.deleteBtnImg:active {
+    filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
+}
+
+.lowerSide{
+    margin-top: 1.1rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+}
+
+/*.listItem{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}*/
+
+
+.listItemsImg{
+    margin: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.profileBtn{
+    background: transparent;
+    border: transparent;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    color: white;
+    display: inline;
+}
+
+.profileBtn:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border: transparent;
+}
+
+.profileBtn:active{
+    background: rgba(255, 255, 255, 0.1);;
+}
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    body{
+
+        overflow: hidden;
+        overflow: auto; 
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .sideBar {
+        flex: 1; /* Adjust the flex value for mobile */
+        border-right: none; /* Remove the right border for mobile */
+        background-color: rgb(101, 50, 23, 0.97);
+        height: 100vh;
+        width: 40%;
+        padding-left: 1rem;
+    }
+
+    .upperSide {
+        padding: 1rem;
+        height: 88%;
+    }
+
+    .upperSideTop {
+        margin-bottom: 1rem; /* Adjust the margin for mobile */
+    }
+
+    .logo {
+        margin-right: 0.5rem; /* Adjust the margin for mobile */
+        height: 6rem; /* Adjust the height for mobile */
+        width: 6rem; /* Adjust the width for mobile */
+    }
+
+    .brandName {
+        font-size: 1.5rem; /* Adjust the font size for mobile */
+    }
+
+    .midButton {
+        width: 96%; /* Adjust the width for mobile */
+        height: 3rem;
+        margin: 0;
+        margin-bottom: 1rem; /* Adjust the margin for mobile */
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .newChatBtnImg{
+        height: 1rem;
+    }
+
+    .upperSideBottom {
+        height: 80%; /* Reset max-height for mobile */
+    }
+
+    .queryButton{
+        width: 98%;
+        font-size: 0.9rem;
+        height: 1rem;
+        margin: 0;
+        margin-bottom: 1rem; /* Adjust the margin for mobile */
+    }
+
+    .profileBtn{
+        font-size: 0.5rem;
+        height: 3rem;
+        width: 80%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+
+    .queryBtnImg {
+        margin-right: 1rem;
+        height: 1.2rem;
+    }
+
+    .deleteBtnImg {
+        height: 1.5rem;
+        width: 1.5rem;
+        right: 0.5rem; /* Adjust the right position for mobile */
+    }
+
+    .lowerSide {
+        margin-top: 0.5rem; /* Adjust the margin for mobile */
+        padding: 0.5rem;
+        font-size: 1rem; /* Adjust the font size for mobile */
+    }
+
+    .listItemsImg {
+        margin: 0.25rem;
+        height: 1.5rem; /* Adjust the height for mobile */
+        width: 1.5rem; /* Adjust the width for mobile */
+    }
+}

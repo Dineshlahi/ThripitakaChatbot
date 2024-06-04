@@ -1,0 +1,142 @@
+body{
+    text-align: center;
+}
+
+.containerSignIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.center-content {
+    text-align: center;
+}
+
+.card {
+    width: 40rem; 
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 6px 10px 0 rgba(38, 33, 33, 0.2);
+}
+
+.cardTitleSignIn{
+    font-size: 3rem;
+}
+
+.logoPic {
+    margin: 0 auto;
+    height: 10rem;
+    width: 10rem;
+}
+
+.emailGroupSignIn, .passwordGroupSignIn{
+    width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.errorAlert{
+    margin: 0;
+    padding: 0.7rem;
+}
+
+.authButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    background: white;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+.authButton:hover {
+    transform: scale(1.05);
+    background: white;
+}
+
+.authButton>.authBtnImg{
+    margin-right: 1rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.middleText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.linkP{
+    font-size: 1.25rem;
+}
+
+.continueButton{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    background: #472710;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+.continueButton:hover {
+    transform: scale(1.05);
+    background: #472710;
+    color: white;
+}
+
+.forgotPassword{
+    font-size: 1.2rem;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .cardTitleSignIn {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .logoPic {
+        height: 8rem; /* Adjust height for smaller screens */
+        width: 8rem; /* Adjust width for smaller screens */
+    }
+
+    .authButton, .continueButton {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .authButton > .authBtnImg {
+        height: 1.5rem; /* Adjust height for smaller screens */
+        width: 1.5rem; /* Adjust width for smaller screens */
+    }
+
+    .linkP {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .forgotPassword {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}

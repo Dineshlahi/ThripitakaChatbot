@@ -1,0 +1,29 @@
+.model {
+    width: 28rem;
+    transform: translate(1%, 77%);
+}
+
+.settingsBtn{
+    background: rgba(1,1,1,0.2);
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    border: none;
+    height: 2.3rem;
+}
+
+.settingsBtn:active{
+    background: rgba(1,1,1,0.1);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .model {
+        width: 12rem;
+    }
+
+    .settingsBtn{
+        height: 1.5rem;
+    }
+    
+}

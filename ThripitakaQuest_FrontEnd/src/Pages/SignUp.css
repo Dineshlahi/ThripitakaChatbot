@@ -1,0 +1,95 @@
+/* Sign-up page specific styles */
+.containerSignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign-up-card {
+    width: 40rem; 
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 6px 10px 0 rgba(38, 33, 33, 0.2);
+}
+
+.cardTitle {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.nameGroup, .emailGroup, .passwordGroup{
+    width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.signUpButton {
+    /* Styles for the sign-up button */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 25rem;
+    margin: 1rem auto;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    background: #472710;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+    color: white;
+}
+
+.signUpButton:hover {
+    transform: scale(1.05);
+    background: #472710;
+    color: white;
+}
+
+.linkP {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.password-input-wrapper {
+    display: flex;
+    position: relative;
+}
+
+/* Adjust the positioning of the input field and the button */
+.password-input-wrapper input {
+    flex: 1;
+}
+
+.toggle-password-button {
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background: none;
+    color: #007bff;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .cardTitle {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .linkP {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .toggle-password-button {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+}
